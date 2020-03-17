@@ -48,7 +48,7 @@
 	{"name":"Mammoth", "action":"follow", "loot":true},
 	{"name":"Polar Bear", "action":"follow", "loot":true},
 	{"name":"Badger", "action":"follow", "loot":true},
-	{"name":"Pinguin", "action":"follow", "loot":true},
+	{"name":"Penguin", "action":"follow", "loot":true},
 	{"name":"Winter Wolf", "action":"follow", "loot":true}
 ],
 "target_spells":
