@@ -1,7 +1,7 @@
 {
 "general": 
 {
-	"loot_type":"auto",
+	"loot_type":"manual",
 	"loot_priority":"first"
 },
 "script_options": {
@@ -48,13 +48,28 @@
 	{"name":"Mammoth", "action":"follow", "loot":true},
 	{"name":"Polar Bear", "action":"follow", "loot":true},
 	{"name":"Badger", "action":"follow", "loot":true},
-	{"name":"Winter Wolf", "action":"follow", "loot":true},
-	{"name":"Pengiun", "action":"follow", "loot":true}
+	{"name":"Pinguin", "action":"follow", "loot":true},
+	{"name":"Winter Wolf", "action":"follow", "loot":true}
 ],
 "target_spells":
 [ 
 	{"name":"exori ico", "min_mana_percent":30, "priority":2, "min_monster_count":2, 
 	    "monsters":["Mammoth"]}
 ],
-"loot": []
+"loot": [
+{"name":"gold coins", "action":"loot", "dest":"gold_bp"},
+{"name":"gold coin", "action":"loot", "dest":"gold_bp"},
+{"name":"Thick Fur", "action":"loot", "dest":"loot_bp"},
+{"name":"Tusk Shield", "action":"loot", "dest":"loot_bp"},
+{"name":"Furry Club", "action":"loot", "dest":"loot_bp"},
+{"name":"Mammoth Whopper", "action":"loot", "dest":"loot_bp"},
+{"name":"Mammoth Tusk", "action":"loot", "dest":"loot_bp"},
+{"name":"Polar Bear Paw", "action":"loot", "dest":"loot_bp"},
+{"name":"Badger Fur", "action":"loot", "dest":"loot_bp"},
+{"name":"Thick Fur", "action":"loot", "dest":"loot_bp"},
+{"name":"Winter Wolf Fur", "action":"loot", "dest":"loot_bp"},
+{"name":"Green Perch", "action":"loot", "dest":"loot_bp"},
+{"name":"Rainbow Trout", "action":"loot", "dest":"loot_bp"}
+
+]
 }
