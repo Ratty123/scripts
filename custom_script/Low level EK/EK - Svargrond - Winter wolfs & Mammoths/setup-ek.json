@@ -1,0 +1,60 @@
+{
+"general": 
+{
+	"loot_type":"auto",
+	"loot_priority":"first"
+},
+"script_options": {
+
+},
+"containers": 
+{
+	"loot_bp":"Red Backpack",
+	"gold_bp":"Camouflage Backpack"
+},
+"tools": {},
+"items":
+{
+	"mana potion": {"hotkey":"f1", "id":268, "use":"self"},
+	"health potion": {"hotkey":"f2", "id":266, "use":"self"},
+	"brown mushroom": {"hotkey":"f3", "id":3725, "use":"use"}
+},
+"spells":
+{
+	"exura ico":"f4",
+	"exori ico":"f5"
+},
+"healing":
+[
+	{"type":"hp", "below_percent":30, "use_item":"health potion",  "priority":4},
+	{"type":"hp", "below_percent":67, "use_spell":"exura ico", "min_mana_percent":20, "priority":3},
+	{"type":"mp", "below_percent":25, "use_item":"mana potion", "priority":2}
+],
+"hunt_config": {
+	"cap_leave": 30,
+	"mana_name": "mana potion",
+	"take_mana": 150,
+	"mana_leave": 20,
+	"health_name": "health potion",
+	"take_health": 20,
+	"health_leave": 2
+},
+"persistent_actions": [
+	{"action":"drop_vials", "interval":300},
+	{"action":"eat_food", "interval":60, "args":{"hotkey":"f3"}} 
+],
+"target_monsters": 
+[
+	{"name":"Mammoth", "action":"follow", "loot":true},
+	{"name":"Polar Bear", "action":"follow", "loot":true},
+	{"name":"Badger", "action":"follow", "loot":true},
+	{"name":"Winter Wolf", "action":"follow", "loot":true},
+	{"name":"Pengiun", "action":"follow", "loot":true}
+],
+"target_spells":
+[ 
+	{"name":"exori ico", "min_mana_percent":30, "priority":2, "min_monster_count":2, 
+	    "monsters":["Mammoth"]}
+],
+"loot": []
+}
